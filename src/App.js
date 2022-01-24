@@ -5,7 +5,7 @@ import Values from "values.js";
 function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values("#F15025").all(10));
+  const [list, setList] = useState(new Values("#A40DDB").all(10));
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,7 +27,7 @@ function App() {
           <input
             type="text"
             autoComplete="off"
-            placeholder="#f15025"
+            placeholder="#A40DDB"
             className={`${error ? "error" : null}`}
             value={color}
             onChange={(event) => {
